@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery : find your dream paintings</title>
+    <!--Link To CSS-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'
+    />
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Nav-->
+        <div class="nav container">
+            <!-- logo -->
+            <a href="#" class="logo">Art Gallery</a>
+            
+                 <a href="http://localhost:5000/index.html">Home</a>  
+                 <a href="http://localhost:5000/about.html">Abouts</a> 
+                 <a href="http://localhost:5000/ContactUs.html">Contact Us</a> 
+            
+            <!-- Cart Icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content"></div>
+                    <!-- Total -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">₹0</div>
+                    </div>
+                    <!-- Buy Button -->
+                    <button type="button" class="btn-buy">Pay Now</button>
+                    <!-- Close Cart -->
+                    <i class='bx bx-x' id="close-cart"></i>
+                
+            </div>
+        </div>
+    </header>
+    <!-- Products -->
+    <section class="shop container">
+        <h2 class="section-title">Available Paintings</h2>
+        <!-- Shop Conetent-->
+        <div class="shop-content">
+            <!-- Box-1 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUJqKhhKToRjUBnvEgvTkwQBBSfG83MpUICEet6MshhyKTt4QcMjIQ9xZO4ckndltuN8Bqs0bJCKUiradM_1AZcvzLkYVnb82KGzGdYt1FoGedAvP7UJtMKFIhQHvTCTBDsj8xUHzJtM4HmMmDKJ7Sz1vmTcFqbkcMqlRyL7O08uQ7dfbvdO0Yb3JH2dE/s320/product1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Flower With Glass Pot</h2>
+                <span class="price">₹499</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-2 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6u4TI-2VJ70o-2JC0aPxBtjtCoz-ZYaeJ4iLmbrwb43Qer5by35wUz2XdubXh-BiNgZ-Jlu-d3uBKsZduyOEuX7Ptiksp8lADzOp7Q213_ZMn6ahq3N9UxwATnIPLcnKAgRIxXyXhefD6gis2VnSDwUahj1G9vUZ83Y2GgKKRfhGwGVb_cfltZc40Vko/s320/product2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Before and after sun-set</h2>
+                <span class="price">₹549</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-3 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLXrRKlS3gxc80wOiNHyxrtKxvB371fB-pmvuM62ePWOEz4i-IT9axOVcq2DeYLR7MzNcfeHI_lyJJt3nUBCymvQ7ib3Qgn_aNRAMn-rHi_mF_wg_G_fzzHN0Ae87YySsrFIOXTIMGl5sY_eA4cEXamHRnx-FiqnGnDpJibfSdrjcE7K2OxgcoxuCWlno/s320/product3.jpg" alt="" class="product-img">
+                <h2 class="product-title">Radha Krishnaa Abstract</h2>
+                <span class="price">₹999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-4 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvsvkZ9Vz48Veonyqi8Llked_NX1uGtGLm4oBmNDohIeY2Ex2Dd8fX5jj02ASDKIkqYNAnRzw2FWAzgl2T8WQsUVCLqLoh0qp1mfkzL9YfSYsypE9O3UAvp4OxOKUBqhDFuEksjPbZbbi1tuOkrTivkAGI7M_neAQcMo9DvYk6flOuN79ABN3C4ZNgQfk/s320/product4.jpg" alt="" class="product-img">
+                <h2 class="product-title">Acrylic flower Painting</h2>
+                <span class="price">₹399</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-5 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ4Ivn8bifzMkVxnKhffO_owp81F32av6-mpvdgVdM0jWKgsfqVf0ffgaewdOwX6ITVO7-M9wcHoUqlSmcFVDGyyGRCG36jNzAwM6JwuQ1fIgIcIDctZG9G_wO4OZGzdhro6X7-gIDUCyC0Syw5lhIVjBZYktGE2pdKJCthW3dB40CrQJ5eXQul63jZng/s320/product5.jpg" alt="" class="product-img">
+                <h2 class="product-title">Cute Panda</h2>
+                <span class="price">₹299</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-6 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzfjy6QiXuSbBYEdVcEpBBbPvfxce_gaY7ITcHNXXz9LGrnH_gkgyzg1Y7W4s8w-ii2T2VaLTcQqcBLuLkmZe92fVqidVbuamKOZrzcyfKK5hzAEC1gqE2dNt3f6ICOcTEkPmzgZ1h-jlOAoxjxS51ZitsqHhho42UKfLOini1C1ydpACSLO8JOtM7cdc/s320/product6.jpg" alt="" class="product-img">
+                <h2 class="product-title">Monsoon flower</h2>
+                <span class="price">₹249</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-7 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLJbn-_pXol_yWbGRKylNFN3OAXViGknfzFIaRe0B0h4OUZmo4PxdgLUkuuTm6sc86hUa3FiP3vYHfXO-8fQUwHtM5aen8-Br6gp1emyPZm5VL4qOQAtrvoUkUmnFY7HYrJAn_NgGfLfKcbKp6pA3yjsSTDotBVvvFSHONUQrevkrCTUkQ9WKyG1riJeY/s320/product7.jpg" alt="" class="product-img">
+                <h2 class="product-title">Cock Painting</h2>
+                <span class="price">₹199</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-8 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj81FxjDxjJFMLvq9YGxX3yOcswGIaaYh0i3cGeH6Pt0ptD_rySNk5H74-glffEyPyu9rIazhpwOvupfVBewswN9G5X5QqmX2vSA0pfAl2x7GKENJdII0rtDVGs-TPVFg312V0kktyrS6cq4lfA7TR_UPWniCdkQvqbuWFH1KlO4AXn4igZfEczb76NDBE/s320/product8.jpg" alt="" class="product-img">
+                <h2 class="product-title">Potrait Girl Painting</h2>
+                <span class="price">₹349</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-9 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA5RteLSoPrxHjkx8qAm-_4_O3NZJL1MJ0uCUdQxvPYY3LxqCYY3jzfmESERwLo9hRyGgGchZYPWh7UjpbWyjT9Jx0RaikTJ4Tn0AdVY6V9tgHv4eyZXm25engN1djh5F6tzVC_hq4lgjZG1ced0iZyt834sQZFq3csuc4XyRVJ_6YaUYsTFJCse4Osa4/s320/product9.jpg" alt="" class="product-img">
+                <h2 class="product-title">Love</h2>
+                <span class="price">₹499</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-10 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHkTyapX-Wnt2oSLYTs9RvLPQTMI1EKrUxlJE4hkJGhU4L2aX60Tg2hinH_Om6ZsP2qD0Qv-4HxIb64B2ZEE32irYlD7H84WJZF6E97qe0cEOR46tVACZiNHGuPI-qzlNtXCPMUDoN7CeITPAA-j5OV1X7brXhCoJ2C0ovy6ZQ6GZPCzVk90_vtP5HLMk/s320/product10.jpg" alt="" class="product-img">
+                <h2 class="product-title">Sunset acrylic</h2>
+                <span class="price">₹99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-11 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKB2pfS1lrF9F1miwrjB7SyfswCy68AAeG9cVUONkrVVEz9itSkjUTy8hJwkJ80O0FYmJ4TGG63LIgyudSK82qL3yBkGxZOpPNlyZ9BIXqd8zK2tj0BrIPmeK82o4IcpibPalmJ3XAhkp-sUadkfAdZbyA_ndBOvb71ayskGtlEGCJFog-XSdLDL5IUE0/s320/product11.jpg" alt="" class="product-img">
+                <h2 class="product-title">Girl in Raining</h2>
+                <span class="price">₹899</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-12 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0E2bcVNL-hc4VH5mefO6-mQArapa3HAW74IizeQcuRrDPziHtZoUTglsfnBswb26vrz31fJ2VT_8OTumkoe3WfNv_InalZdFqgOt4L88KOdrFKLIBZTe7O2hfPfixqTui3vvK3klZbxRi3jNfjSnALWiIup6P1QJFGr_QY4hZZwYtpfd1oJCD0EMBdsg/s320/product12.jpg" alt="" class="product-img">
+                <h2 class="product-title">Beast in Beas</h2>
+                <span class="price">₹799</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-13 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX61DDnV0uQfuddaF-UV-7PM_rsJlCLmELoVZzPZ6n31KC_zBOmJ7X4j3xcGQXJdxtBLaYBXZLD4HJ-z10hYnIUnomTKFtaocTFR6KlqwEmBo6EY6YkibKp7ggnN8Hg7aQh3Ivb2bO0pcVvJuYj6Do8zvdIyxk081WVB4bJ36W8F231wbz1c9wTRfJs10/s320/product13.jpg" alt="" class="product-img">
+                <h2 class="product-title">Hand made Flower</h2>
+                <span class="price">₹199</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-14 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFZiFD1KYRVMmPkFX3dzzmQsb_d6Cetr08Vqd6Ja3I9jyx-L-YUtFRK33upp_F1QJfH_u_3Qi1iHudvd75Y6cdDgwkMsMS-Jpgq2sInAb0e0vTbHegvHndW273Es_9AuZnmzRZX2D1icD6JZsc0jOzbeL5jL-TPArVgbVZPosBUIKIoevmRnYifHJNMtk/s320/product14.jpg" alt="" class="product-img">
+                <h2 class="product-title">Hand Made flower pot</h2>
+                <span class="price">₹399</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-15 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg06N5j--lMB8t2h0vGvrZDIy7PpyYLvN7dcfGFf3IylwS70ygJwlTabnVV5isleg56uyZErar2ikRNqPOGdBBVpt3vipoesx3SxvaGPF61UIByG6OkJE7mNk7NK9Pgb7zNb6G_ShEgjSNosRSKXnp_yPGVawbz5aYtreRvbiboLUXsHvaYa8hA7_GnzOI/s320/product15.jpg" alt="" class="product-img">
+                <h2 class="product-title">Hand made cemented pot</h2>
+                <span class="price">₹149</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box-16 -->
+            <div class="product-box">
+                <!-- strip need images that are on online local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghlC6V-vG1ghNDN0tRCO75nQJQA2R5MuQgAnvBhpznHZVqtRSzV9Jm7F0WAV48XNbwyG9zfXUxH48qhEdMKN4ep9gsYJ-p19DNah3Tj-r54Emp1BLSD81NfBMK0PlbAmPzUo97bVScxdyE2OMgONnYaRCaPveKy0KPAvH8ZSYoIkdapsoOEfn8zTiesvs/s320/product16.jpg" alt="" class="product-img">
+                <h2 class="product-title">Hand made pot</h2>
+                <span class="price">₹49</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link to JS-->
+    <script src="JS/main.js"></script>
+    <script src="JS/cart.js"></script>
+    <!-- Link section of all content inside this web page -->
+      <h2>Check my Social media</h2>
+      <ul>
+        <li><a href="https://www.facebook.com/lakhs.nu/" target="_blank">Facebook id</a> </li>
+        <li><a href="https://www.instagram.com/lakhsld/" target="_blank">Insta id</a> </li>
+        <li><a href="https://www.linkedin.com/in/lakhyajit-das-5a3818200" target="_blank">Linkedin id</a> </li>
+        <li><a href="https://www.instagram.com/lakhsld/" target="_blank">Insta id</a> </li>
+      </ul>
+      <p>This site sensitive for &copylakhyajit; </p>
+</body>
+</html>
